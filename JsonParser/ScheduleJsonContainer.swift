@@ -9,7 +9,7 @@
 import Foundation
 import MapKit
 
-class ScheduleJsonContainer {
+class ScheduleJsonContainer /*:CustomStringConvertible*/ {
     
     var allLessons = [NSString: LessonsForClass]() //Class, lessons by date for a particular class
     
@@ -19,11 +19,13 @@ class ScheduleJsonContainer {
     
     func parse(data: NSData){
         
-        guard let json = try? NSJSONSerialization.JSONObjectWithData(data, options: []) as? [NSString: AnyObject]
+        guard let json = try? NSJSONSerialization.JSONObjectWithData (data, options: []) as? [NSString: AnyObject]
             else {
+                print ("\njsonerror\n")
                 return
         }
-        
+       
+        print ("HERE COMES JSON\n \(json)\n")
         // citiesFromDataStore = CityDataStore (cities: citiesFrom.map (readCity))
         // cant understand Mikhails code...
         
@@ -34,7 +36,11 @@ class ScheduleJsonContainer {
         }
         for (ClassName, value) in unwrappedJson {
             if let lessonsFromJson = value as? [NSString: [NSInteger]] {
-                allLessons[ClassName] = LessonsForClass(data: lessonsFromJson)
+                allLessons[ClassName] = LessonsForClass (data: lessonsFromJson)
+            }
+            else {
+                print ("aw shit")
+                exit(0)
             }
         }
         
