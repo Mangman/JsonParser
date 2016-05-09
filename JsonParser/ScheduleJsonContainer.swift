@@ -25,7 +25,8 @@ class ScheduleJsonContainer /*:CustomStringConvertible*/ {
                 return
         }
        
-        print ("HERE COMES JSON\n \(json)\n")
+        //print ("HERE COMES JSON\n \(json)\n")
+        
         // citiesFromDataStore = CityDataStore (cities: citiesFrom.map (readCity))
         // cant understand Mikhails code...
         

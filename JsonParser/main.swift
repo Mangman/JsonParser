@@ -24,4 +24,4 @@ guard let file = fileManager.contentsAtPath(filePath)
 }
 let weekSchedule = ScheduleJsonContainer(data: file)
 
-print (weekSchedule.allLessons["8"]!.Lessons["1"])
+print (weekSchedule.allLessons["8"]!.Lessons["1"]!)
