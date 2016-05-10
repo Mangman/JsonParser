@@ -28,12 +28,13 @@
 
 /* Begin PBXFileReference section */
 		844FA6121CE08F7B00D6DECC /* LessonsForClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonsForClass.swift; sourceTree = "<group>"; };
-		844FA6141CE0AC1100D6DECC /* Schedule.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = Schedule.json; path = "../../Library/Developer/Xcode/DerivedData/JsonParser-gvicuaxcqotisxccyvqaxhwwaacq/Build/Products/Debug/Schedule.json"; sourceTree = "<group>"; };
 		844FA6161CE0F60500D6DECC /* LessonDataJsonContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonDataJsonContainer.swift; sourceTree = "<group>"; };
 		844FA6181CE0F61E00D6DECC /* Lesson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lesson.swift; sourceTree = "<group>"; };
 		84795D1C1CDFD7DB002147BF /* JsonParser */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = JsonParser; sourceTree = BUILT_PRODUCTS_DIR; };
 		84795D1F1CDFD7DB002147BF /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		84795D271CDFD8AB002147BF /* ScheduleJsonContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleJsonContainer.swift; sourceTree = "<group>"; };
+		84E4DD621CE25F8300E1F391 /* Lessons.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Lessons.json; path = "../../Library/Developer/Xcode/DerivedData/JsonParser-gvicuaxcqotisxccyvqaxhwwaacq/Build/Products/Debug/Lessons.json"; sourceTree = "<group>"; };
+		84E4DD631CE25F9600E1F391 /* Schedule.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Schedule.json; path = "../../Library/Developer/Xcode/DerivedData/JsonParser-gvicuaxcqotisxccyvqaxhwwaacq/Build/Products/Debug/Schedule.json"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +51,8 @@
 		844FA6151CE0AC1800D6DECC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				844FA6141CE0AC1100D6DECC /* Schedule.json */,
+				84E4DD621CE25F8300E1F391 /* Lessons.json */,
+				84E4DD631CE25F9600E1F391 /* Schedule.json */,
 			);
 			name = Resources;
 			sourceTree = "<group>";

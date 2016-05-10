@@ -6,10 +6,6 @@
 //  Copyright © 2016 Stepan. All rights reserved.
 //
 
-
-
-// NOT TESTED YET
-
 import Foundation
 
 class lessonDataJsonContainer {
