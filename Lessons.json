@@ -1,0 +1,15 @@
+[ 
+    {
+	"name" : "theoretical Dota",
+	"room" : "228",
+	"teacherId" : 35,
+	"homeTaskId" : 54,
+	},
+
+    {
+	"name" : "Math",
+	"room" : "34",
+	"teacherId" : 2,
+	"homeTaskId" : 6,
+	}
+]
