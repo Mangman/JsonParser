@@ -14,7 +14,8 @@ class LessonsForClass {
     init (data: NSDictionary?) {
         guard let dict = data as? [NSString: [NSInteger]]
             else {
-            return
+            print("LessonsForClass: init error")
+            exit(0)
         }
         Lessons = dict
     }
