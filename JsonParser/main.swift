@@ -19,27 +19,15 @@ let filePathForLessonsFile = Process.arguments[2]
 
 let fileManager = NSFileManager()
 
-guard filePathForScheduleFile.hasSuffix(".json") == true
+guard filePathForScheduleFile.hasSuffix(".json") == true, let scheduleFile = fileManager.contentsAtPath (filePathForScheduleFile)
     else {
         print ("\ncrashed1 \(Process.arguments)")
         exit(0)
 }
 
-guard filePathForLessonsFile.hasSuffix(".json") == true
+guard filePathForLessonsFile.hasSuffix(".json") == true, let lessonsFile = fileManager.contentsAtPath (filePathForLessonsFile)
     else {
         print ("\ncrashed2 \(Process.arguments)")
-        exit(0)
-}
-
-guard let scheduleFile = fileManager.contentsAtPath (filePathForScheduleFile)
-    else {
-        print ("\ncrashed3")
-        exit(0)
-}
-
-guard let lessonsFile = fileManager.contentsAtPath (filePathForLessonsFile)
-    else {
-        print ("\ncrashed4")
         exit(0)
 }
 
