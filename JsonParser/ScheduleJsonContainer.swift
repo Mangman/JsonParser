@@ -28,7 +28,7 @@ class ScheduleJsonContainer /*:CustomStringConvertible*/ {
                 return
         }
        
-        print ("HERE COMES JSON\n \(json)\n")
+        //print ("HERE COMES JSON\n \(json)\n")
         
         lessons = LessonsForClass (data: json)
         
